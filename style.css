@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #333;
+  }
+  
+  header {
+    background: #2ecc71;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #219150;
+  }
+  
+  #listaProductos {
+    margin-top: 1.5rem;
+  }
+
+  form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background: #2980b9;
+  }
+
+  .btnEliminar {
+    margin-top: 0.5rem;
+    background: #e74c3c;
+  }
+  
+  #alertas {
+    margin: 1rem;
+  }
+  
+  .alerta {
+    background: #fff3cd;
+    border-left: 6px solid #f1c40f;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .alerta.urgente {
+    background: #f8d7da;
+    border-left-color: #e74c3c;
+  }
+  
+    

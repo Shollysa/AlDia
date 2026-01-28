@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>AlDia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+
+  <header>
+    <h1>AlDia</h1>
+    <p>Control de fechas de vencimiento</p>
+  </header>
+
+  <section id="alertas"></section>
+
+  <main>
+
+    <button type="button" id="btnAgregar">➕ Agregar producto</button>
+  
+    <form id="formProducto" hidden>
+
+        <label for="diasAlerta">Días de alerta</label>
+        <select id="diasAlerta">
+            <option value="3">3 días</option>
+            <option value="5">5 días</option>
+            <option value="7">7 días</option>
+         </select>
+
+      <input type="text" id="nombre" placeholder="Nombre del producto" required>
+  
+      <input type="number" id="cantidad" placeholder="Cantidad" required>
+  
+      <input type="date" id="fechaVencimiento" required>
+  
+      <button type="submit">Guardar producto</button>
+    </form>
+  
+    <section id="listaProductos"></section>
+  
+  </main>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
