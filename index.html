@@ -6,8 +6,6 @@
   <title>AlDia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
-
 </head>
 <body>
 
@@ -16,35 +14,51 @@
     <p>Control de fechas de vencimiento</p>
   </header>
 
-  <section id="alertas"></section>
-
   <main>
 
-    <button type="button" id="btnAgregar">➕ Agregar producto</button>
-  
-    <form id="formProducto" hidden>
+    <!-- ===== HOME ===== -->
+    <section id="home">
+
+      <!-- Alertas -->
+      <section id="alertas"></section>
+
+      <!-- Botón agregar -->
+      <button type="button" id="btnAgregar">➕ Agregar producto</button>
+
+      <!-- Formulario -->
+      <form id="formProducto" hidden>
 
         <label for="diasAlerta">Días de alerta</label>
         <select id="diasAlerta">
-            <option value="3">3 días</option>
-            <option value="5">5 días</option>
-            <option value="7">7 días</option>
-         </select>
+          <option value="3">3 días</option>
+          <option value="5">5 días</option>
+          <option value="7">7 días</option>
+        </select>
 
-      <input type="text" id="nombre" placeholder="Nombre del producto" required>
-  
-      <input type="number" id="cantidad" placeholder="Cantidad" required>
-  
-      <input type="date" id="fechaVencimiento" required>
-  
-      <button type="submit">Guardar producto</button>
-    </form>
-  
-    <section id="listaProductos"></section>
-  
+        <input type="text" id="nombre" placeholder="Nombre del producto" required>
+        <input type="number" id="cantidad" placeholder="Cantidad" required>
+        <input type="date" id="fechaVencimiento" required>
+
+        <button type="submit">Guardar producto</button>
+      </form>
+
+      <!-- Ver productos -->
+      <button type="button" id="btnVerProductos">📦 Mis productos agregados</button>
+
+    </section>
+
+    <!-- ===== VISTA PRODUCTOS ===== -->
+    <section id="vistaProductos" hidden>
+
+      <button type="button" id="btnVolver">⬅ Volver</button>
+
+      <section id="listaProductos"></section>
+
+    </section>
+
   </main>
-  
 
   <script src="app.js"></script>
 </body>
 </html>
+
